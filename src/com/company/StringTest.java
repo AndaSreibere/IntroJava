@@ -21,13 +21,36 @@ public class StringTest {
         
         int counter = 0; // šis nozīmē, ka sāk skaitīt no nulles
         for (int i = 0; i < regularString.length() ; i++) {
-            System.out.println(regularString.charAt(i));
+            System.out.println(regularString.toLowerCase().charAt(i));
             if ('a' == regularString.charAt(i)) {
                 counter++;
             }
         }
         System.out.println("The number of times A appeared is:" + counter);
 
+
+        //TASK1
+        //Write a program to count the number of times a vowel appears in a word
+        //Physician - pirmais vārds
+        //Aerodynamics - otrais vārds
+
+        String firstWord = "Physician";
+        String secondWord = "Aerodynamics";
+        int counterFirst = 0;
+        int counterSecond = 0;
+        for (int i = 0; i <firstWord.length() ; i++) {
+            if ('a' == firstWord.charAt(i) || 'o' == firstWord.charAt(i) || 'e' == firstWord.charAt(i) || 'i' == firstWord.charAt(i) || 'u' == firstWord.charAt(i)) {
+                counterFirst++;
+            }
+        }
+        for (int i = 0; i <secondWord.length() ; i++) {
+            if ('a' == secondWord.charAt(i) || 'o' == secondWord.charAt(i) || 'e' == secondWord.charAt(i) || 'i' == secondWord.charAt(i) || 'u' == secondWord.charAt(i)) {
+                counterSecond++;
+            }
+        }
+
+        System.out.println("The number of vowels in the first word is: " + counterFirst);
+        System.out.println("The number of vowels in the first word is: " + counterSecond);
 
 
     }
