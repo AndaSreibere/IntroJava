@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class AssignmentsIV {
-    public static void main(String[] args) {
+
 
         // Write a Java program to find maximum product of two integers in a given array of integers Example:
         //Input :

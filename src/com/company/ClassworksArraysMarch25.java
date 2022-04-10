@@ -14,6 +14,25 @@ public class ClassworksArraysMarch25 {
         //extra cash.
         //Priority - Bananas [least], fish[second], bread[first] 15min
 
+        //TASK3
+        //initialize string array
+        String[] groceryList = {"Bananas", "Bread", "Fish"};
+        int[] prices = {12, 5, 10};
+        int totalCost = prices[2] + prices[1];
+
+        System.out.println("You can buy fish and bread and you will be left with " + (20 - totalCost) + "EUROS");
+
+
+
+
+
+
+
+
+
+
+
+
         //TASK 1 Risinājums
         Scanner scanner = new Scanner(System.in);
       //  int[] numberOfPeople = new int[5];
