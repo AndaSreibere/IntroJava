@@ -1,4 +1,4 @@
-package com.company;
+package oop;
 
 public class Car {
     //define the attributes of the object
