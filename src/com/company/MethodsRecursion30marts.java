@@ -6,6 +6,10 @@ public class MethodsRecursion30marts {
     public static void main(String[] args) {
         System.out.println(factorial(5)); // piemers par factorial
         System.out.println(lenghtOfString("hello")); //piemers par string
+        //TASK1
+        System.out.println("The sum of the numbers is: " + sumOfnumbers(5));
+        //TASK2
+        System.out.println("The reverse is: " + stringReverse("hello"));
     }
 
     // Recursion is a phenomenon where a method calls itself.
@@ -46,8 +50,28 @@ public class MethodsRecursion30marts {
         if (value.equals("")){
             return 0;
         }
-        return lenghtOfString(value.substring(1)) +1;
+        return lenghtOfString(value.substring(1)) +1; //substring lets you get a part of a string, lai var izskaitīt visu, sašķeļot string
     }
+
+//TASK 1 - Using recursion, write a method that takes a number as a parameter and returns the total sum between one and that number
+
+    public static int sumOfnumbers(int n){
+        if(n == 0){
+            return n;
+        }
+        return n + sumOfnumbers(n-1); //ja n ir 6, tad būtu šādi: 6+5+4+3+2+1
+    }
+
+
+//TASK 2 - Using recursion, write a method that takes a string as a parameter and returns the reverse of the string
+    public static String stringReverse (String text){
+        if(text.equals("")){
+            return "";
+        }
+        return stringReverse(text.substring(1)) + text.charAt(0);
+    }
+
+
 
 
 }
